@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../these.png">
+    <title>Résultat</title>
+    <style>
+        /* Styles de base */
+        .i img {
+            margin-left: 120px;
+            max-width: 100%; /* Assure que l'image ne dépasse pas de l'écran */
+            height: auto; /* Garantit que l'image conserve son ratio */
+        }
+
+        .form {
+            margin: auto;
+            width: 75%;
+            max-width: 500px; /* Limite la largeur du formulaire */
+            border: 4px solid gray;
+            font-size: 20px;
+            color: blue;
+            border-radius: 20px;
+            text-align: center;
+            padding: 20px;
+        }
+
+        input[type="text"] {
+            margin: 10px;
+            width: calc(100% - 20px); /* Calcule la largeur du champ de saisie en fonction de la marge */
+            padding: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: rgb(50, 50, 240);
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: blueviolet;
+        }
+
+        p {
+            margin-right: 0; /* Ajuste la marge droite pour qu'elle soit à zéro */
+            text-align: center; /* Centre le paragraphe */
+        }
+
+        .p {
+            display: flex;
+            justify-content: center; /* Centre le contenu horizontalement */
+            align-items: center; /* Centre le contenu verticalement */
+        }
+
+        span {
+            padding: 20px;
+        }
+
+        .g {
+            color: blue;
+        }
+
+        /* Media Queries */
+        @media screen and (max-width: 768px) {
+            .i img {
+                margin-left: 0; /* Réinitialise la marge à zéro pour les petits écrans */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="i">
+        <img src="image.png">
+    </div>
+    <br>
+    <form class="form" method="post" action="authentification.php">
+        <label>Numéro Etudiant</label>
+        <input type="text" value="C" name="mat">
+        <input type="submit" value="ENTRER أدخل">
+        <label>رقم التسجيل</label>
+    </form>
+</body>
+</html>

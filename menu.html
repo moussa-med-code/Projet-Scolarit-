@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scolarité</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* Nouveau style CSS */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 960px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            /*text-align: center;*/
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+        
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+        
+        nav ul li:hover ul {
+            display: block;
+        }
+        
+        nav ul li ul {
+            display: none;
+            position: absolute;
+            background: #333;
+            border-radius: 5px;
+            padding: 10px;
+            text-align: left;
+            width: 190px;
+            margin-top: 5px;
+        }
+        
+        nav ul li ul li {
+            display: block;
+            margin: 5px 0;
+        }
+        
+        nav ul li ul li a {
+            display: block;
+            padding: 5px;
+        }
+        
+        nav ul li a:hover {
+            background: #555;
+        }
+        
+        .home {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        
+        .section-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+        
+        .content {
+            margin-top: 20px;
+        }
+        
+        .btn {
+            background: #333;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        
+        .btn:hover {
+            background: #555;
+        }
+        .icone{
+            width: 1em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Scolarité</h1>
+    <nav>
+        <ul>
+    <li><a href="http://resultats.una.mr/FST/" target="_blank">Résultats</a></li>
+    <li><a href="res_orien" target="_blank">Résultats d'orientation</a></li>
+    <li><a href="Calendrierscolaire.html" target="_blank">Calendrier scolaire</a></li>
+    <li>
+        <form>
+            <select id="connecter" name="connecter">
+                <option>Se connecter :</option>
+                <option>Administrateur</option>
+                <option >Autres</option>
+            </select>
+            <select id="departements" name="departements">
+                <option>Départements :</option>
+                <option>Biologie</option>
+                <option>Chimie</option>
+                <option>Geologie</option>
+                <option>Physique</option>
+                <option>Math/Informatique</option>
+            </select>
+        </form>
+    </li>
+    <li><a class="button" href="page_explicative(en savoir plus).html">En savoir plus  <span><img class="icone" src="en_savoir_plus.png"></span></a></li>
+    <li><div class="btn"><a href="index.html">Accueil <span ><img class="icone" src="maison.png"></span></a></div></li>
+    </ul>
+    </nav>
+</header>
+<div class="container">
+    <section class="home">
+        <nav>
+            <ul>
+                <li>
+                    <a class="btn">Menu</a>
+                    <ul>
+                        <li><a href="http://resultats.una.mr/FST/" target="_blank">Résultats</a></li>
+                        <li><a href="res_orien" target="_blank">Résultats d'orientation</a></li>
+                        <li><a href="Calendrierscolaire.html" target="_blank">Calendrier scolaire</a></li>
+                        <li><a href="page_explicative(en savoir plus).html">En savoir plus</a></li>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li>
+                            <form>
+                                <select id="connecter" name="connecter" class="btn">
+                                    <option>Se connecter :</option>
+                                    <option>Administrateur</option>
+                                    <option>Autres</option>
+                                </select>
+                                <select id="departements" name="departements" class="btn">
+                                    <option>Départements :</option>
+                                    <option>Biologie</option>
+                                    <option>Chimie</option>
+                                    <option>Géologie</option>
+                                    <option>Physique</option>
+                                    <option>Math/Informatique</option>
+                                </select>
+                            </form>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="content">
+            <div class="section-title">NIVEAUX DU SYSTÈME LMD :</div>
+            <div class="section-content">
+                <p><b>La Licence (L):</b><br>
+                    Les études en vue de l'obtention du diplôme national de Licence durent trois (3) ans et comprennent 180 crédits répartis sur six (6) semestres. Elle peut être fondamentale ou appliquée. Le diplôme de licence appliquée vise essentiellement l'insertion professionnelle. Le diplôme de licence fondamentale vise principalement la poursuite d'études.</p>
+                <p><b>Master (M):</b><br>
+                    Deux années de formation après la licence (Bac+5). Un cycle comprenant quatre semestres. Un programme comportant 120 crédits. Il peut être un Master de recherche ou un Master professionnel.</p>
+                <p><b>Doctorat (D):</b><br>
+                    Trois années après le Master (Bac+8).</p>
+            </div>
+        </div>
+    </section>
+</div>
+<script>
+    function redirect_connecter() {
+        var connecter = document.getElementById("connecter").value;
+        if (connecter === "Autres") {
+            var url = "Autres.php"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (connecter === "Administrateur") {
+            var url = "form.php"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        }
+    }
+
+    function redirect_depatements() {
+        var departements = document.getElementById("departements").value;
+        if (departements === "Biologie") {
+            var url = "Biologie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Géologie") {
+            var url = "Geologie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Chimie")
+        {
+            var url = "Chimie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Physique") {
+            var url = "Physique.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Math/Informatique") {
+            var url = "Math_Informatique.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        }
+    }
+
+    document.getElementById("connecter").onchange = redirect_connecter;
+    document.getElementById("departements").onchange = redirect_depatements;
+</script>
+</body>
+</html>

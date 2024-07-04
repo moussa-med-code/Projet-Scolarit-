@@ -1,0 +1,48 @@
+h3 {
+    text-align: center;
+    color: brown;
+    border-radius: 6px;
+    text-shadow: 2px 4px 6px blue;
+}
+table{
+    margin: auto;
+    border: lightblue solid 2px;
+    text-align: center;
+    background-color: #009999;
+    color: white;
+}
+th{
+    background-color:#006666;
+}
+td:hover{
+    background-color:#006666;
+}
+.btn{
+    text-align: right;
+}
+a{
+    font-size: 18px;
+    text-decoration: none;
+}
+a:hover{
+    color: red;
+}
+.icone{
+    width: 1em;
+    height: auto;
+}
+h1 {
+    font-size: 36px; /* Taille de la police */
+    font-weight: bold; /* Poids de la police */
+    color: #333; /* Couleur du texte */
+    text-align: center; /* Alignement du texte */
+    text-transform: uppercase; /* Transformation en majuscules */
+    margin: 20px 0; /* Marge extérieure supérieure et inférieure */
+    padding: 10px; /* Remplissage intérieur */
+    border-bottom: 2px solid #333; /* Bordure en bas */
+    line-height: 1.2; /* Hauteur de ligne */
+    letter-spacing: 2px; /* Espacement des lettres */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Ombre du texte */
+    background-color: #f8f8f8; /* Couleur de fond */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre de la boîte */
+}

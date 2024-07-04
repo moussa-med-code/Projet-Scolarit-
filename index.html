@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Scolarité</title>
+    <link rel="icon" href="favicon.ico">
+    <style>
+        /* Styles communs */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .content{
+            color: white;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            color: #333;
+            line-height: 1.6;
+            margin: 0; /* Reset des marges */
+            padding: 0; /* Reset des paddings */
+            background-image: url(sco.png); /* Image de fond */
+            background-size: cover; /* Redimensionne l'image pour couvrir toute la zone */
+            background-position: center; /* Centre l'image horizontalement et verticalement */
+            background-attachment: fixed; /* Image de fond fixée lors du défilement */
+        }
+
+        /* Styles pour les écrans de taille moyenne et supérieure */
+        @media screen and (min-width: 768px) {
+            .content {
+                position: relative; /* Changement de position */
+                top: auto; /* Remise à la position normale */
+                margin: 50px auto; /* Centrage horizontal */
+                max-width: 70%; /* Largeur maximale ajustée */
+                color: white;
+            }
+        }
+
+        /* Styles pour les écrans de petite taille */
+        @media screen and (max-width: 767px) {
+            .content {
+                position: relative; /* Changement de position */
+                top: auto; /* Remise à la position normale */
+                margin: 20px auto; /* Centrage horizontal */
+                max-width: 90%; /* Largeur maximale ajustée */
+            }
+
+            nav ul li {
+                display: block; /* Affichage en bloc */
+                margin: 10px 0; /* Marge légère */
+                text-align: center; /* Centrage du texte */
+            }
+
+            .icone {
+                display: block; /* Affichage en bloc */
+                margin: 0 auto 10px; /* Centrage horizontal et ajout de marge en bas */
+            }
+        }
+
+        /* Styles communs */
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            margin-bottom: 20px;
+            padding-left: 25px;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+            margin-top: 20px;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        nav ul li a:hover , nav ul li select:hover{
+            background-color: #ccc;
+        }
+
+        .home {
+            color: black;
+            border-radius: 5px;
+        }
+
+        .section-title {
+            margin-bottom: 20px;
+            font-size: 24px;
+            border-bottom: 2px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .social {
+            margin: auto;
+            width: 100%;
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .ui-btn:hover {
+            color: rgb(247, 247, 247);
+            background-color: rgb(0, 81, 255);
+            border-color: rgb(0, 81, 255);
+            text-shadow: 0 0 50px white, 0 0 20px white, 0 0 15px white;
+            box-shadow: 0 0 50px rgb(0, 81, 255), 0 0 30px rgb(0, 81, 255),
+                0 0 60px rgb(0, 81, 255), 0 0 120px rgb(0, 81, 255);
+        }
+
+        .icone {
+            width: 1.5em;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Scolarité</h1>
+    <nav>
+        <ul>
+            <li><a class="ui-btn" href="index.html">Accueil <span ><img class="icone" src="maison.png"></span></a></li>
+            <li><a class="ui-btn" href="res" target="_blank">Résultats</a></li>
+            <li><a class="ui-btn" href="res_orien" target="_blank">Résultats d'orientation</a></li>
+            <li><a class="ui-btn" href="Calendrierscolaire.html" target="_blank">Calendrier scolaire</a></li>
+            <li>
+                <form>
+                    <select id="connecter" class="ui-btn" name="connecter">
+                        <option>Se connecter :</option>
+                        <option>Administrateur</option>
+                        <option >Autres</option>
+                    </select>
+                </form>
+            </li>
+            <li>
+            <form>
+                    <select id="departements" class="ui-btn" name="departements">
+                        <option>Départements :</option>
+                        <option>Biologie</option>
+                        <option>Chimie</option>
+                        <option>Géologie</option>
+                        <option>Physique</option>
+                        <option>Math/Informatique</option>
+                    </select>
+            </form>
+            </li>
+            </li>
+            <li><a class="ui-btn" href="page_explicative(en savoir plus).html">En savoir plus  <span><img class="icone" src="en_savoir_plus.png"></span></a></li>
+            <li><a class="ui-btn" href="Reclamations.html" target="_blank">Reclamations</a></li>
+        </ul>
+    </nav>
+
+</header>
+<div class="container" >
+    <section class="home">
+        
+        <div class="content">
+            <div class="section-title">NIVEAUX DU SYSTÈME LMD :</div>
+            <div class="section-content">
+                <p><b>La Licence (L):</b><br>
+                    Les études en vue de l'obtention du diplôme national de Licence durent trois (3) ans et comprennent 180 crédits répartis sur six (6) semestres. Elle peut être fondamentale ou appliquée. Le diplôme de licence appliquée vise essentiellement l'insertion professionnelle. Le diplôme de licence fondamentale vise principalement la poursuite d'études.</p>
+                <p><b>Master (M):</b><br>
+                    Deux années de formation après la licence (Bac+5). Un cycle comprenant quatre semestres. Un programme comportant 120 crédits. Il peut être un Master de recherche ou un Master professionnel.<br><br>
+                    <p><b>Doctorat (D):</b><br>
+                    trois années après le Master (Bac+8).
+            </div>
+        </div>
+    </section>
+
+</div>
+<script>
+    function redirect_connecter() {
+        var connecter = document.getElementById("connecter").value;
+        if (connecter === "Autres") {
+            var url = "Autres.php"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (connecter === "Administrateur") {
+            var url = "form.php"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        }
+    }
+
+    function redirect_depatements() {
+        var departements = document.getElementById("departements").value;
+        if (departements === "Biologie") {
+            var url = "Biologie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Géologie") {
+            var url = "Geologie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Chimie") {
+            var url = "Chimie.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Physique") {
+            var url = "Physique.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        } else if (departements === "Math/Informatique") {
+            var url = "Math_Informatique.html"; // Modifier l'extension selon votre besoin (html/php)
+            window.location.href = url;
+        }
+    }
+
+    document.getElementById("connecter").onchange = redirect_connecter;
+    document.getElementById("departements").onchange = redirect_depatements;
+
+
+</script>
+<div id="contact-nous" class="social">
+    <a href="https://www.facebook.com/profile.php?id=100009493193045&mibextid=ZbWKwL" target="_blank"><img class="icone" src="image/facebook.png" alt="Facebook"></a>
+    <a href="https://www.tiktok.com/@moussamed44?_t=8eBl4YnnmhK&_r=1" target="_blank"><img class="icone" src="image/tiktok.png" alt="TikTok"></a>
+    <a href="https://youtube.com/@user-mk7ty7dn7x" target="_blank" ><img class="icone" src="image/youtube.png" alt="YouTube"></a>
+    <a href="https://instagram.com/moussamouhamederebih?igshid=MzNlNGNkZWQ4Mg==" target="_blank"><img class="icone" src="image/instagram.png" alt="Instagram"></a>
+    <a href="https://api.whatsapp.com/send/?phone=22244076356&text&type=phone_number&app_absent=0" target="_blank"><img class="icone" src="image/wts.png" alt="WhatsApp"></a>
+</div>
+</body>
+</html>

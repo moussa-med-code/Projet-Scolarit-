@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="vraie.png">
+<title>Modèle Conceptuel de Données</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+        padding: 20px;
+        background-color: #f9f9f9;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+    h1 {
+        text-align: center;
+    }
+    .entity {
+        margin-bottom: 20px;
+    }
+    .entity h2 {
+        background-color: #007bff;
+        color: #fff;
+        padding: 10px;
+        margin: 0;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .attributes {
+        padding: 10px;
+        border: 1px solid #ddd;
+        border-top: none;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
+    }
+    .attribute {
+        margin-bottom: 5px;
+    }
+    .primary-key {
+        font-weight: bold;
+        color: #007bff;
+    }
+    .foreign-key {
+        font-style: italic;
+        color: #28a745;
+    }
+    img{
+        width: 75%;
+    }
+</style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Modèle Conceptuel de Données</h1>
+
+    <div class="entity">
+        <h2>Administrateur</h2>
+        <div class="attributes">
+            <div class="attribute">nomcomplet: varchar(225)</div>
+            <div class="attribute">password: varchar(225)</div>
+        </div>
+    </div>
+
+    <div class="entity">
+        <h2>Étudiant</h2>
+        <div class="attributes">
+            <div class="attribute primary-key">Matricule: varchar(6) (Primary Key)</div>
+            <div class="attribute">NomComplet: varchar(225)</div>
+            <div class="attribute">Orientation: varchar(225)</div>
+            <div class="attribute">Filière: varchar(225)</div>
+            <div class="attribute">Départements: varchar(225)</div>
+        </div>
+    </div>
+
+    <div class="entity">
+        <h2>Matieres</h2>
+        <div class="attributes">
+            <div class="attribute primary-key">id: int(11) (Primary Key)</div>
+            <div class="attribute">nom: varchar(100)</div>
+            <div class="attribute">credit: int(11)</div>
+        </div>
+    </div>
+
+    <div class="entity">
+        <h2>Notes</h2>
+        <div class="attributes">
+            <div class="attribute primary-key">id: int(11) (Primary Key)</div>
+            <div class="attribute">Matricule: varchar(6) <span class="foreign-key">(Foreign Key)</span></div>
+            <div class="attribute">id_matiere: int(11) <span class="foreign-key">(Foreign Key)</span></div>
+            <div class="attribute">Note_TP: decimal(4,2)</div>
+            <div class="attribute">Note_CC: decimal(4,2)</div>
+            <div class="attribute">Note_CF: decimal(4,2)</div>
+            <div class="attribute">Note_Finale: decimal(4,2)</div>
+            <div class="attribute">Note_Rattrapage: decimal(4,2)</div>
+        </div>
+    </div>
+
+    <div class="entity">
+        <h2>Profs</h2>
+        <div class="attributes">
+            <div class="attribute primary-key">telephone: varchar(20) (Primary Key)</div>
+            <div class="attribute">nomcomplet: varchar(50)</div>
+            <div class="attribute">matieres: varchar(225)</div>
+            <div class="attribute">email: varchar(100)</div>
+            <div class="attribute">date_embauche: date</div>
+            <div class="attribute">Departements: varchar(225)</div>
+        </div>
+    </div>
+
+    <div class="entity">
+        <h2>Réclamation</h2>
+        <div class="attributes">
+            <div class="attribute">Matricule: varchar(6) <span class="foreign-key">(Foreign Key)</span></div>
+            <div class="attribute">NomComplet: varchar(225)</div>
+            <div class="attribute">Message: varchar(225)</div>
+        </div>
+    </div>
+</div>
+<center><img src="image/mcd.png"></center>
+</body>
+</html>

@@ -1,0 +1,100 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.ico">
+    <title>Scolarité</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        header {
+            background-color: #5a7a5b;
+            color: black;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        main {
+            margin: 20px;
+        }
+        h1 {
+            color: #4CAF50;
+            text-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+        }
+        h2 {
+            color: rgb(2, 141, 25);
+        }
+        p {
+            line-height: 1.6;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        li::before {
+            content: "•";
+            color: #4CAF50;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        span {
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Projet : Scolarité</h1>
+    </header>
+    <main>
+        <section>
+            <h1>Fonctionnement du système de notation</h1>
+    <p>
+        Chaque matière possède les éléments suivants :
+    </p>
+    <ul>
+        <li>Note_TP : Note des travaux pratiques (si existants)</li>
+        <li>Note_CC : Note du contrôle continue</li>
+        <li>Note_CF : Note du contrôle final</li>
+        <li>Note_Finale : Note finale de la matière</li>
+        <li>Note_Rattrapage : Note de rattrapage (si nécessaire)</li>
+    </ul>
+    <p>
+        <b><font color="red">Calcul de la Note_Finale :</font></b>
+    </p>
+    <ul>
+        <li>Si la matière a un TP : `(Note_TP * 1 + Note_CC * 2 + Note_CF * 3) / 6`</li>
+        <li>Si la matière n'a pas de TP : `(Note_CC * 2 + Note_CF * 3) / 5`</li>
+    </ul>
+    <p>
+        <b><font color="red">Validation des modules :</font></b>
+    </p>
+    <ul>
+        <li>Validation sans rattrapage : Pour chaque matière Note_Finale >= 10</li>
+        <li>Validation grâce au module : 7 <= Note_Finale < 10 :<br><p><font color="red">On arrondit la note de la matière et on regarde les autres matières validées du même module que la matière en question. On emprunte leurs points si leur Note_Finale est supérieure à 10, en tenant compte du fait qu'une point d'une matière avec crédit 6 vaut 2 points pour une matière avec crédit 3.</font></p></li>
+        <li>Rattrapage : Note_Finale < 7</li>
+    </ul>
+    <p>
+        <b><font color="red">Crédit des matières et décision finale :</font></b>
+    </p>
+    <ul>
+        <li>Chaque matière a un crédit de 6 ou 3.</li>
+        <li>Un point d'une matière à crédit 6 équivaut à deux points d'une matière à crédit 3.</li>
+        <li>Décision pour la matière : "V" (validé) si le module est validé, "R" (Rattrapage) sinon.</li>
+        <li>Moyenne du module : `(somme des Note_Finale * leurs crédits) / somme des crédits`</li>
+        <li>Validation du module : Moyenne du module >= 10 et aucune matière avec "NV".</li>
+    </ul>
+    <p>
+        Calcul de la moyenne générale : `somme des moyennes des modules / nombre de modules`
+    </p>
+        </section>
+    </main>
+</body>
+</html>
